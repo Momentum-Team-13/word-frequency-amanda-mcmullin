@@ -23,7 +23,18 @@ def print_word_freq(file):
     new_string = new_string.lower()
     print(new_string)
 
-    #remove "stop words" -- words used so frequently they are ignored
+    #remove "stop words" -- words used so frequently they are ignored -- **new_string changed to list to filter words**
+    new_string = new_string.split()
+    print(new_string)
+    print(type(new_string))
+    
+    for word in new_string:
+        if word in STOP_WORDS:
+            print(word)
+            new_string = list(filter((word).__ne__, new_string))
+    print(new_string)
+
+    
 
 if __name__ == "__main__":
     import argparse
