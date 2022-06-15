@@ -3,15 +3,17 @@
 ## Directions
 
 In this project, you will 
-[]use `open` to read in a text file and 
+[x]use `open` 
+[x]to read in a text file and 
 []calculate the frequency of words in that file.
 
 To calculate the frequency of words, you must:
 
-[]- remove punctuation
+[x]- remove punctuation
 []- normalize all words to lowercase
 []- remove "stop words" -- words used so frequently they are ignored
-[]- go through the file word by word and keep a count of how often each word is used
+[]- go through the file word by word and 
+[]- keep a count of how often each word is used
 
 []When your program is complete, you should be able to run 
 ```

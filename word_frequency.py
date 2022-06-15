@@ -1,3 +1,5 @@
+import string
+
 STOP_WORDS = [
     'a', 'an', 'and', 'are', 'as', 'at', 'be', 'by', 'for', 'from', 'has', 'he',
     'i', 'in', 'is', 'it', 'its', 'of', 'on', 'that', 'the', 'to', 'were',
@@ -6,8 +8,18 @@ STOP_WORDS = [
 
 
 def print_word_freq(file):
-    """Read in `file` and print out the frequency of words in that file."""
-    pass
+    """Read in `file` and print out the frequency of words in that file.  YOUR CODE GOES HERE"""
+    print(f'Your file is: {file}')
+    with open(file) as open_file:
+        read_file = open_file.read()
+    print(read_file)
+
+
+    #remove punctuation
+    new_string = read_file.translate(str.maketrans('', '', string.punctuation))
+    print(new_string)
+
+    #normalize all words to lowercase
 
 
 if __name__ == "__main__":
@@ -25,3 +37,5 @@ if __name__ == "__main__":
     else:
         print(f"{file} does not exist!")
         exit(1)
+
+print_word_freq("simple-test-file.txt")
