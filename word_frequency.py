@@ -20,7 +20,10 @@ def print_word_freq(file):
     print(new_string)
 
     #normalize all words to lowercase
+    new_string = new_string.lower()
+    print(new_string)
 
+    #remove "stop words" -- words used so frequently they are ignored
 
 if __name__ == "__main__":
     import argparse
