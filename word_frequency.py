@@ -51,9 +51,9 @@ def print_word_freq(file):
     build_final_tally()
     
 
-# print_word_freq("simple-test-file.txt")
-# print_word_freq("one-today.txt")
-# print_word_freq("praise_song_for_the_day.txt")
+print_word_freq("simple-test-file.txt")
+print_word_freq("one-today.txt")
+print_word_freq("praise_song_for_the_day.txt")
 print_word_freq("the-hill-we-climb.txt")
 
 
