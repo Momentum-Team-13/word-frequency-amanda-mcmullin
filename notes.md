@@ -2,23 +2,25 @@
 
 ## Directions
 
-In this project, you will 
-[x]use `open` 
-[x]to read in a text file and 
-[]calculate the frequency of words in that file.
+In this project, you will
+[x]use `open`
+[x]to read in a text file and
+[x]calculate the frequency of words in that file.
 
 To calculate the frequency of words, you must:
 
 [x]- remove punctuation
 [x]- normalize all words to lowercase
 [x]- remove "stop words" -- words used so frequently they are ignored
-[x]- go through the file word by word and 
-[]x- keep a count of how often each word is used
+[x]- go through the file word by word and
+[x]x- keep a count of how often each word is used
 
-[x]When your program is complete, you should be able to run 
+[x]When your program is complete, you should be able to run
+
 ```
 python3 word_frequency.py praise_song_for_the_day.txt
-``` 
+```
+
 and get a printed report showing the number of times each word appears in that file, formatted like this:
 
 ```
